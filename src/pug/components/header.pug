@@ -1,0 +1,33 @@
+include ../mixins/logo
+
+header.header
+  nav.header__navbar
+    .header__container
+      a.brand(href="#")
+        +logo
+      .burger
+        .burger__line-wrapper
+          span.burger__line
+          span.burger__line
+          span.burger__line
+      .menu
+        .menu__header
+          a.brand(href="#")
+            +logo
+          .burger.is-active.close-menu
+            .burger__line-wrapper
+              span.burger__line
+              span.burger__line
+              span.burger__line
+        ul.menu__list
+          li.menu__item
+            a.menu__link(href="#") Equipment
+          li.menu__item
+            a.menu__link(href="#") About us
+          li.menu__item
+            a.menu__link(href="#") Blog
+      .menu__account
+        a.menu__account-link(href="#")
+          i.bx.bx-user-circle
+          | Account
+  .header-backdrop

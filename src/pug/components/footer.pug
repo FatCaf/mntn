@@ -1,0 +1,28 @@
+include ../mixins/logo
+
+footer
+  .container
+    .footer__row
+      .footer__column.footer__column--logo
+        .footer__logo
+          a(href="#")
+            +logo
+        .footer__copy
+          | Get out there & discover your next 
+          br
+          | slope, mountain & destination!
+        .footer__copyright Copyright 2023 MNTN, Inc. Terms & Privacy
+      .footer__column.footer__column--links
+        h4.footer__heading More on The Blog
+        ul.footer__list
+          li.footer__item: a(href="#") About MNTN
+          li.footer__item: a(href="#") Contributors & Writers
+          li.footer__item: a(href="#") Write For Us
+          li.footer__item: a(href="#") Contact Us
+          li.footer__item: a(href="#") Privacy Policy
+      .footer__column.footer__column--links
+        h4.footer__heading More on MNTN
+        ul.footer__list
+          li.footer__item: a(href="#") The Team
+          li.footer__item: a(href="#") Jobs
+          li.footer__item: a(href="#") Press

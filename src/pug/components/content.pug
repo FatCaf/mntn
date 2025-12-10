@@ -1,0 +1,65 @@
+include ../mixins/content-section.pug
+
+section#section-00.hero.section
+  .hero__image-wrapper
+    img.sky(src=require("./images/sky.png"), alt="Sky background")
+    img.mountains(src=require("./images/mountains.png"), alt="Mountains background")
+    img.man-standing(src=require("./images/man-standing.png"), alt="Hiker standing on a rock")
+  .hero__content
+    h5.hero__subtitle A Hiking guide
+    h1.hero__title
+      span Be prepared for the
+      br
+      span Mountains and beyond!
+    a.hero__action(href="#section-01")
+      | Scroll down
+      svg(width="16", height="24", viewBox="0 0 16 24", fill="none", xmlns="http://www.w3.org/2000/svg")
+        path(d="M16 16L14.59 14.59L9 20.17V0H7V20.17L1.42 14.58L0 16L8 24L16 16Z", fill="currentColor")
+
+section.section-offset.section
+  .container
+    +contentSection(
+      "section-01",
+      require("./images/step-1.png"),
+      "Hiker walking up details",
+      "01",
+      "GEt Started",
+      "What level of  hiker",
+      "are you?",
+      "Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?",
+      "Read more about Getting Started"
+    )
+    
+    +contentSection(
+      "section-02",
+      require("./images/step-2.png"),
+      "Hiking gear details",
+      "02",
+      "Hiking Essentials",
+      "Picking the right",
+      "Hiking Gear!",
+      "Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?",
+      "Read more about Hiking Gear"
+    )
+    
+    +contentSection(
+      "section-03",
+      require("./images/step-3.png"),
+      "Compass and map",
+      "03",
+      "where you go is the key",
+      "Understand Your",
+      "Map & Timing",
+      "Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?",
+      "Read more about Understanding Your Map"
+    )
+
+nav.slider
+  .container
+    ul.slider__list
+      li.slider__item: a(href="#section-00") Start
+      li.slider__item: a(href="#section-01") 01
+      li.slider__item: a(href="#section-02") 02
+      li.slider__item: a(href="#section-03") 03
+    .slider__progress
+      .slider__bar(style="height: 20%;")

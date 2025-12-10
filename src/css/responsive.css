@@ -1,0 +1,282 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .menu__account-link {
+    font-size: 17px;
+  }
+  
+  .menu__account-link {
+    font-size: 17px;
+  }
+
+  /* Hero Section Start   */
+
+  .hero__image-wrapper img.sky {
+    margin-top: -25%;
+    transform: translateY(10%);
+    height: auto;
+  }
+
+  .hero__image-wrapper img.mountains {
+    margin-top: -10%;
+    height: auto;
+  }
+
+  .hero__image-wrapper img.man-standing {
+    margin-top: -58%;
+    height: auto;
+  }
+
+  /* Hero Section End   */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Hero Section Start   */
+
+  .hero__subtitle {
+    font-size: 18px;
+  }
+
+  .hero__subtitle::before {
+    height: 2px;
+    width: 50px;
+  }
+
+  .hero__title {
+    font-size: 66px;
+    line-height: 70px;
+  }
+
+  /* Hero Section End   */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    padding: 0 80px;
+  }
+
+  .header__container {
+    padding: 0 80px;
+  }
+
+  /* Header Navigation Start   */
+
+  .header__navbar {
+    padding: 64px 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .on-scroll .header__navbar {
+    padding: 24px 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  .burger {
+    display: none;
+    visibility: hidden;
+  }
+
+  .brand svg {
+    max-width: 108px;
+  }
+
+  .menu {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+    box-shadow: none;
+    top: unset;
+    left: 0;
+    right: unset;
+    transform: unset;
+  }
+
+  .menu__list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    margin: 0 auto;
+    padding: 0;
+    row-gap: 0;
+  }
+
+  .menu__account {
+    margin-left: 86px;
+    column-gap: 50px;
+  }
+
+  .header-backdrop,
+  .menu__header {
+    display: none;
+  }
+
+  .menu__account-link:hover,
+  .menu__link:hover {
+    color: #fbd784;
+  }
+
+  /* Header Navigation End   */
+
+  /* Hero Section Start   */
+
+  .hero {
+    max-height: unset;
+    padding-bottom: 200px;
+    max-height: unset;
+  }
+
+  .hero::after {
+    height: 60%;
+  }
+
+  .hero__content {
+    padding: 0 80px;
+    z-index: 3;
+    top: 14%;
+  }
+
+  .hero__subtitle {
+    font-size: 18px;
+  }
+
+  .hero__subtitle::before {
+    height: 2px;
+    width: 72px;
+  }
+
+  .hero__title {
+    font-size: 88px;
+    line-height: 100px;
+  }
+
+  .hero__image-wrapper img.sky {
+    transform: translateY(40%);
+  }
+
+  /* Hero Section End   */
+
+  .content .content__image-wrapper {
+    width: auto;
+  }
+
+  .content__image-wrapper img {
+    width: 566px;
+    height: auto;
+  }
+
+  .content:nth-child(odd) .content__image-wrapper {
+    order: 2;
+  }
+
+  .content:nth-child(odd) .content__text-wrapper {
+    order: 1;
+  }
+
+  .content:not(:last-child) {
+    margin-bottom: 200px;
+  }
+
+  .content:nth-child(1) .content__subtitle {
+    margin-bottom: 208px;
+  }
+
+  .content__subtitle::before {
+    height: 2px;
+    width: 72px;
+  }
+
+  .section-offset {
+    margin-top: -30%;
+  }
+
+  .content__text-wrapper {
+    padding-left: 50px;
+  }
+
+  .content__image-wrapper img {
+    width: 466px;
+    height: auto;
+  }
+
+  .content__row {
+    gap: 75px;
+    flex-direction: row;
+  }
+
+  .content__subtitle {
+    font-size: 18px;
+  }
+
+  .content__title {
+    font-size: 54px;
+  }
+
+  .content__description {
+    font-size: 18px;
+  }
+
+  .content__subtitle .content__counter {
+    font-size: 240px;
+    left: -20%;
+    transform: translateY(-50%);
+  }
+
+  footer {
+    padding-top: 200px;
+    padding-bottom: 120px;
+  }
+
+  .footer__row {
+    gap: 100px;
+    flex-direction: row;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .content__text-wrapper {
+    padding-left: 100px;
+  }
+
+  .content__row {
+    gap: 85px;
+  }
+
+  .content__subtitle .content__counter {
+    left: -20%;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .content__text-wrapper {
+    padding-left: 150px;
+  }
+
+  .content__image-wrapper img {
+    width: 566px;
+    height: auto;
+  }
+
+  .content__row {
+    gap: 114px;
+  }
+
+  .content__title {
+    font-size: 64px;
+  }
+
+  .content__subtitle .content__counter {
+    left: -40%;
+  }
+
+  .footer__row {
+    gap: 200px;
+  }
+}
